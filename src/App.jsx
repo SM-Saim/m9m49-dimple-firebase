@@ -27,7 +27,8 @@ function App() {
       <button onClick={handleGoogleSignIn}>Google Sign In</button>
       {user && (
         <div className="card">
-          <h2>User Name: {user.displayName}</h2>
+          <img src={user.photoURL} alt="" />
+          <h3>User Name: {user.displayName}</h3>
           <p>Email: {user.email}</p>
         </div>
       )}
